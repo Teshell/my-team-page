@@ -73,7 +73,6 @@ html {
   right: 100%;
   left: calc(100% + 20px);
   transform: rotateZ(90deg);
-  font-size: 12px;
   white-space: nowrap;
 }
 
