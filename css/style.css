@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-title {
+  font-family: PT serif;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  margin-bottom: 38px;
+}
+
+.header-description {
+  width: 439px;
+}
+
+.header-description h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 85px;
+  row-gap: 40px;
+  margin-top: 96px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery .item {
+  position: relative;
+}
+
+.gallery .item p {
+  font-family: PT serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 42px;
+  right: -65px;
+}
+
+.gallery .item h5 {
+  font-size: 18px;
+}
+
+.gallery .item:nth-child(2),
+.gallery .item:nth-child(5) {
+  margin-top: 100px;
+}
+
+/* FOOTER */
+footer p {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  margin-bottom: 24px;
+  color: #a9a9a9;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 1070px) {
+  .container {
+    width: 93%;
+  }
+
+  .gallery {
+    width: 90%;
+    margin: 96px auto;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery .item p {
+    font-size: 10px;
+  }
+
+  .gallery .item h5 {
+    font-size: 14px;
+  }
+
+  .gallery .item:nth-child(5) {
+    margin-top: 0;
+  }
+
+  .gallery .item:nth-child(2),
+  .gallery .item:nth-child(4),
+  .gallery .item:nth-child(6) {
+    margin-top: 47px;
+  }
+}
