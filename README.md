@@ -38,13 +38,6 @@
 
 ![screenshot](https://user-images.githubusercontent.com/34944685/132093179-b3528dda-8544-4a35-a74b-dc9b9964acdb.jpeg)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
-
 ### Built With
 
 This website is built using only HTML and CSS
